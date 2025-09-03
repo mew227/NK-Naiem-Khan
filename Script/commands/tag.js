@@ -1,31 +1,44 @@
+const fs = require("fs");
+
 module.exports.config = {
- name: "tag",
- version: "1.0.0",
- hasPermssion: 2,
- credits: "Shahadat Islam",
- description: "Group এ সবাইকে নির্দিষ্ট সংখ্যায় মেনশন পাঠানো",
- commandCategory: "group",
- usages: "/tag [everyone]",
- cooldowns: 2
+  name: "tag",
+  version: "1.0.0",
+  hasPermission: 0,
+  credits: "NK Naiem Khan",
+  description: "Auto mention user step by step with 1-second delay",
+  commandCategory: "fun",
+  usages: "tag @mention সংখ্যা",
+  cooldowns: 5,
 };
 
-module.exports.run = async ({ api, event, args }) => {
- const threadID = event.threadID;
- const threadInfo = await api.getThreadInfo(threadID);
- const memberIDs = threadInfo.participantIDs;
+module.exports.run = async function ({ api, event, args }) {
+  // mention আছে কি না চেক
+  if (!event.mentions || Object.keys(event.mentions).length === 0) {
+    return api.sendMessage("⚠️ দয়া করে কাকে মেনশন করবেন সেটা দিন।", event.threadID, event.messageID);
+  }
 
- const repeatCount = parseInt(args[0]) || 1;
+  // কয়বার মেনশন করবে
+  let number = parseInt(args[args.length - 1]);
+  if (isNaN(number) || number <= 0) {
+    return api.sendMessage("⚠️ কতবার মেনশন করতে চান সেটা লিখুন।", event.threadID, event.messageID);
+  }
 
- const mentions = memberIDs
- .filter(id => id != api.getCurrentUserID())
- .map(id => ({ tag: "@everyone", id }));
+  // মেনশন করা ইউজার আইডি আর নাম
+  const mentionID = Object.keys(event.mentions)[0];
+  const mentionName = event.mentions[mentionID].replace("@", "");
 
- for (let i = 0; i < repeatCount; i++) {
- await api.sendMessage({
- body: `📢 @everyone\nসবাই চিপা থেকে বের হও 🐸`,
- mentions
- }, threadID);
+  let count = 0;
 
- await new Promise(resolve => setTimeout(resolve, 2000)); 
- }
+  // ধাপে ধাপে 1 সেকেন্ড পর পর mention
+  let interval = setInterval(() => {
+    if (count >= number) {
+      clearInterval(interval);
+      return;
+    }
+    api.sendMessage(
+      { body: `👉 ${mentionName}`, mentions: [{ tag: mentionName, id: mentionID }] },
+      event.threadID
+    );
+    count++;
+  }, 1000); // প্রতি 1 সেকেন্ডে একবার
 };
