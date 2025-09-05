@@ -45,9 +45,9 @@ module.exports.languages = {
 
 const helpImages = [
     "https://i.imgur.com/aYSN2Ze.jpeg",
-    "https://i.imgur.com/aYSN2Ze.jpeg",
-    "https://i.imgur.com/aYSN2Ze.jpeg",
-    "https://i.imgur.com/aYSN2Ze.jpeg"
+    "https://i.imgur.com/pUxP6Lx.jpeg",
+    "https://i.imgur.com/wb6qhdL.jpeg",
+    "https://i.imgur.com/gQnxRiO.jpeg"
 ];
 
 function downloadImages(callback) {
@@ -85,7 +85,7 @@ module.exports.handleEvent = function ({ api, event, getText }) {
         command.config.commandCategory || "Unknown",  
         command.config.cooldowns || 0,  
         prefix,  
-        global.config.BOTNAME || "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"  
+        global.config.BOTNAME || "𝐍𝐚𝐢𝐞𝐦 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"  
     );  
 
     downloadImages(files => {  
@@ -115,7 +115,7 @@ module.exports.run = function ({ api, event, args, getText }) {
             command.config.commandCategory || "Unknown",  
             command.config.cooldowns || 0,  
             prefix,  
-            global.config.BOTNAME || "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"  
+            global.config.BOTNAME || "𝐍𝐚𝐢𝐞𝐦 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"  
         );  
 
         downloadImages(files => {  
@@ -148,8 +148,8 @@ module.exports.run = function ({ api, event, args, getText }) {
 ${msg}
 ┣━━━━━━━━━━━━━━━━┫
 ┃ ⚙ Prefix: ${prefix}
-┃ 🤖 Bot Name: ${global.config.BOTNAME || "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"}
-┃ 👑 Owner: 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐒𝐀𝐇𝐔
+┃ 🤖 Bot Name: ${global.config.BOTNAME || "𝐍𝐚𝐢𝐞𝐦 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"}
+┃ 👑 Owner: 𝐍𝐤 𝐍𝐚𝐢𝐞𝐦 𝐊𝐡𝐚𝐧
 ╰━━━━━━━━━━━━━━━━╯`;
 
     downloadImages(files => {  
