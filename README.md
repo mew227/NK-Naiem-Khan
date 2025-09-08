@@ -7,7 +7,7 @@
 
 
 Assalamualaikum Everyone!  
-**Welcome to My 𝐍𝐚𝐢𝐞𝐦 CHAT BOT Fork!**
+**Welcome to My 𝐍𝐀𝐈𝐄𝐌 CHAT BOT Fork!**
 
 ![Box-shaped Image](https://i.imgur.com/PdXd4qf.jpeg)
 
