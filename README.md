@@ -12,8 +12,8 @@ Assalamualaikum Everyone!
 ![Box-shaped Image](https://i.imgur.com/PdXd4qf.jpeg)
 
 <p align="center" style="animation: glow 2s infinite alternate; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-  <span style="font-size: 24px; font-weight: bold;">SHAHADAT CHAT BOT Modified By Nk Naiem Khan</span><br>
-  <span> Develop By SHAHADAT SAHU</span>
+  <span style="font-size: 24px; font-weight: bold;">NAIEM CHAT BOT</span><br>
+  <span> Develop By NK NAIEM KHAN</span>
 </p>
 
 
