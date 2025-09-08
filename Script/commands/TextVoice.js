@@ -15,16 +15,16 @@ const path = require("path");
 
 // Text অনুযায়ী audio URL
 const textAudioMap = {
-  "হাই": "https://files.catbox.moe/60cwcg.mp3",
-  "কিউট": "https://files.catbox.moe/dv9why.mp3",
-  "ভালোবাসি": "https://files.catbox.moe/qjfk1b.mp3",
-  "লাভ": "https://files.catbox.moe/dv9why.mp3",
-  "সুপ্রভাত": "https://files.catbox.moe/9pou40.mp3",
-  "শুভরাত্রি": "https://files.catbox.moe/rm5ozj.mp3",
-  "ধন্যবাদ": "https://files.catbox.moe/7avi7u.mp3",
-  "মজা": "https://files.catbox.moe/utl83s.mp3",
-  "হাহা": "https://files.catbox.moe/2sweut.mp3",
-  "কেমন আছো": "https://files.catbox.moe/epqwbx.mp3"
+  "হাই": "",
+  "কিউট": "",
+  "ভালোবাসি": "",
+  "I love you": "https://files.catbox.moe/npy7kl.mp3",
+  "সুপ্রভাত": "",
+  "শুভরাত্রি": "",
+  "ধন্যবাদ": "",
+  "মজা": "",
+  "হাহা": "",
+  "কেমন আছো": ""
 };
 
 module.exports.handleEvent = async ({ api, event }) => {
