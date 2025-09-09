@@ -1,7 +1,7 @@
 {
-  "name": "SHAHADAT CHAT BOT",
+  "name": "NK NAIEM KHAN CHAT BOT",
   "version": "10.1.1",
-  "description": "Made By SHAHADAT SAHU",
+  "description": "Made By NK NAIEM KHAN",
   "main": "Main.js",
   "engines": {
     "node": "20.x",
@@ -14,25 +14,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT.git"
+    "url": "https://github.com/NkNaiem/NK-Naiem-Khan.git"
   },
   "keywords": [
     "bot",
     "facebook",
-    "shahadatproject",
+    "naiemproject",
     "messenger",
     "javascript",
-    "shadat",
-    "ullash",
-    "cybersahu",
-    "shahadat chat bot"
+    "naiem",
+    "cybernaiem",
+    "nk naiem khan chat bot"
   ],
-  "author": "SHAHADAT SAHU",
+  "author": "NK NAIEM KHAN",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT/issues"
+    "url": "https://github.com/NkNaiem/NK-Naiem-Khan/issues"
   },
-  "homepage": "https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT/issues",
+  "homepage": "https://github.com/NkNaiem/NK-Naiem-Khan",
   "dependencies": {
     "@distube/ytdl-core": "^4.13.2",
     "@miraipr0ject/assets": "^1.0.9",
